@@ -4,30 +4,30 @@
     box-sizing: border-box;
 }
 
-body {
+#my-body {
     background-color: #0c0036;
     display: grid;
     place-content: center;
     height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.25rem;
 }
 
-.container {
+.my-container {
     background-color: white;
     padding: 2rem 4rem;
     border-radius: 1rem;
 }
 
-h1 {
-    padding-bottom: 1rem;
+ul {
+    padding-left: 0 !important;
 }
 
 li {
-    display: inline-flex;
+    display: flex;
     align-items: flex-end;
-    height: 2rem;
+    justify-content: space-between;
     border-bottom: 1px solid lightgray;
+    margin-top: 1rem;
 }
 
 .done {
@@ -35,7 +35,6 @@ li {
 }
 
 ul span {
-    margin-left: 1rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     box-shadow: 0 0 5px 1px crimson;
