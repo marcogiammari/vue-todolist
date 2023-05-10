@@ -31,8 +31,10 @@ createApp({
             this.toDoList.splice(i, 1)
         },
         addToDo() {
-            let toAdd = { ...this.newToDo }
-            this.toDoList.push(toAdd)
+            if (this.newToDo.text.length > 2) {
+                let toAdd = { ...this.newToDo }
+                this.toDoList.push(toAdd)
+            }
         },
         changeStatus(i) {
             this.toDoList[i].done = !this.toDoList[i].done

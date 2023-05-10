@@ -28,6 +28,7 @@ li {
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
     margin-top: 1rem;
+    padding-bottom: .5rem;
     cursor: pointer;
 }
 
@@ -36,9 +37,8 @@ li {
 }
 
 ul span {
-    aspect-ratio: 1/1;
     border-radius: 50%;
-    box-shadow: 0 0 5px 1px crimson;
+    box-shadow: 0 0 2px 1px crimson;
     background-color: crimson;
     color: white;
     cursor: pointer;
