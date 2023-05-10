@@ -14,11 +14,11 @@
         <div class="my-container d-flex flex-column gap-3">
             <h1 class="text-center">TODO LIST</h1>
             <div class="d-flex align-items-center gap-2">
-                <input v-model="newToDo.text" type="text">
+                <input v-model="newToDo.text" @keyup.enter="addToDo" type="text">
                 <button @click="addToDo" class="btn btn-success">Aggiungi</button>   
             </div>
             <ul>
-                <li v-for="(toDo, i) in toDoList" :class="isDone(i)">{{toDo.text}}<span @click="deleteToDo(i)"><i class="fa-solid fa-xmark fa-fw"></i></span></li>
+                <li v-for="(toDo, i) in toDoList" @click="changeStatus(i)" :class="isDone(i)">{{toDo.text}}<span @click="deleteToDo(i)"><i class="fa-solid fa-xmark fa-fw"></i></span></li>
             </ul>
         </div>
     </div>

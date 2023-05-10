@@ -33,6 +33,10 @@ createApp({
         addToDo() {
             let toAdd = { ...this.newToDo }
             this.toDoList.push(toAdd)
+        },
+        changeStatus(i) {
+            this.toDoList[i].done = !this.toDoList[i].done
         }
+
     },
 }).mount("#app");
