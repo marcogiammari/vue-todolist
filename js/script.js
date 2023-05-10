@@ -22,6 +22,9 @@ createApp({
     methods: {
         isDone(i) {
             return (this.toDoList[i].done) ? "done" : null
+        },
+        deleteToDo(i) {
+            this.toDoList.splice(i, 1)
         }
     },
 }).mount("#app");

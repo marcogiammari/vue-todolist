@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue ToDoList</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="app">
         <div class="container">
             <h1>TODO LIST</h1>
             <ul v-for="(toDo, i) in toDoList">
-                <li :class="isDone(i)">{{toDo.text}}</li>
+                <li :class="isDone(i)">{{toDo.text}}</li><span @click="deleteToDo(i)"><i class="fa-solid fa-xmark fa-fw"></i></span>
             </ul>
         </div>
     </div>

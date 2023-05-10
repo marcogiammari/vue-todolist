@@ -10,6 +10,7 @@ body {
     place-content: center;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
 }
 
 .container {
@@ -23,9 +24,22 @@ h1 {
 }
 
 li {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 2rem;
     border-bottom: 1px solid lightgray;
 }
 
 .done {
     text-decoration: line-through;
+}
+
+ul span {
+    margin-left: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px crimson;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
 }
